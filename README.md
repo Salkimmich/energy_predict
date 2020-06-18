@@ -7,9 +7,9 @@ The goal of this challenge is to build a regression model and deploy it with doc
 ### EDA and Regression
 In this notebook we try to predict two numeric values heating_load and cooling_load using 8 features. The algorithms that will be used are:
 
-* Decision tree /
-* Random forest /
-* Extras tree /
+* Decision tree 
+* Random forest 
+* Extras tree 
 
 ### Regression Pipeline
 This notebook uses the best parameters found in Energy+efficiency dataset EDA and Regression.ipynb for the ExtraTreesRegressor when training our model. All steps are wrapped up as chain links in a pipeline. This pipeline takes the data, preprocess it and trains the model at the same time. Finally the model will be saved using joblib package, in order to use use it later, without the need to retrain it.
