@@ -3,7 +3,9 @@
 ## Problem Statement and Scope
 The goal of this challenge is to build a regression model and deploy it with docker. The dataset you will use for the challenge is available at https://archive.ics.uci.edu/ml/datasets/Energy+efficiency. You should be able to run the docker image and then curl the container by sending json containing the attributes of a new building and get a json response with the heating and cooling loads predicted by your trained model. The code should be written in python but you can use whichever libraries you like to train and deploy the model.
 
-## Jupyter
+## To run Jupyter Notebooks
+Run 'Jupyter Notebook' inside of jupyter folder to initiate the following two notebooks:
+
 ### EDA and Regression
 In this notebook we try to predict two numeric values heating_load and cooling_load using 8 features. The algorithms that will be used are:
 
