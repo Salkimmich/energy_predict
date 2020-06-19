@@ -18,6 +18,8 @@ This notebook uses the best parameters found in Energy+efficiency dataset EDA an
 
 
 ## To run flask-api 
+Dockerfile script was optimized with base image that's already contain some of the required python library inside so it builds and pushes to docker hub faster because of the build result being smaller. You could push it to your own docker hub too using this file but for this time, I'm using my docker hub for deployment (sarakimmich/flask-api:latest). To deploy the service to your kubernetes cluster (in this case, minikube), execute the commands as needed below in the folder containing flask-api.yml.
+
 1. sudo docker login
 This will init docker with your credential. Enter your username and password for docker repo.
 
