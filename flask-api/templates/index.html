@@ -1,0 +1,57 @@
+{% block head%}
+
+{% endblock %}
+
+{% block body %}
+<div>
+    <h1>Energy & Efficiency Predictor</h1>
+
+    <form action="/" method="POST">
+        <div>
+            <p>Relative Compactness</p>
+            <input type="text" name="relative_compactness" id="relative_compactness" class="form-control">
+        </div>
+
+        <div>
+            <p>Surface Area</p>
+            <input type="text" name="surface_area" id="surface_area" class="form-control">
+        </div>
+
+        <div>
+            <p>Wall Area</p>
+            <input type="text" name="wall_area" id="wall_area" class="form-control">
+        </div>
+
+        <div>
+            <p>Roof Area</p>
+            <input type="text" name="roof_area" id="roof_area" class="form-control">
+        </div>
+
+        <div>
+            <p>Overall Height</p>
+            <input type="text" name="overall_height" id="overall_height" class="form-control">
+        </div>
+
+        <div>
+            <p>Orientation</p>
+            <input type="text" name="orientation" id="orientation" class="form-control">
+        </div>
+
+        <div>
+            <p>Glazing Area</p>
+            <input type="text" name="glazing_area" id="glazing_area" class="form-control">
+        </div>
+
+        <div>
+            <p>Glazing Area Distribution</p>
+            <input type="text" name="glazing_area_distribution" id="glazing_area_distribution" class="form-control">
+        </div>
+
+        <div>
+            <p><input type="submit" value="Predict" class="btn btn-primary"></p>
+        </div>
+    </form>
+    <h2>Predictions</h2>
+    <p>{{pred}}</p>
+</div>
+{% endblock %}
